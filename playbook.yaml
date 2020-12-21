@@ -1,0 +1,23 @@
+# vim: set shiftwidth=2 tabstop=2 softtabstop=-1 expandtab:
+---
+- name: just testing things
+  hosts: all
+  become: yes
+  tasks:
+
+    - name: create file with touch
+      file:
+         path: ~ansible/var
+         state: touch
+         mode: 0622
+         owner: ansible
+         group: ansible
+
+    - name: create file2 with touch
+      file:
+         path: ~ansible/var2
+         state: touch
+         mode: 0622
+         owner: ansible
+         group: ansible
+

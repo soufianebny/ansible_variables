@@ -1,0 +1,5 @@
+[group1]
+127.0.0.1 #prenom=sfn
+
+[group1:vars]
+#prenom=sfn
